@@ -43,7 +43,7 @@ jobs:
           brew portable-package --verbose portable-ruby
 
       - name: Upload Portable Ruby
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: bottles_${{matrix.os}}
           path: ${{matrix.workdir || github.workspace}}/bottle
